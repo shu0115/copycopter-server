@@ -5,7 +5,8 @@ gem 'flutie', '1.3.3'
 gem 'bourbon', '2.1.0'
 gem 'formtastic', '2.0.2'
 gem 'htmldiff', '0.0.1'
-gem 'pg', '0.13.2'
+#gem 'pg', '0.13.2'
+gem "sqlite3"
 gem 'rails', '3.2.6'
 gem 'thin', '1.3.1'
 gem 'yajl-ruby', '1.1.0', :require => 'yajl'
@@ -19,6 +20,7 @@ group :assets do
 end
 
 
+=begin
 group :development, :test do
   gem 'foreman', '0.40.0'
   gem 'launchy', '2.0.5'
@@ -36,3 +38,6 @@ group :test do
   gem 'shoulda-matchers', '1.0.0'
   gem 'timecop', '0.3.5'
 end
+=end
+
+gem 'copycopter_client', '~> 2.0.1'
